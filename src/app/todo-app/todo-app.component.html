@@ -1,0 +1,14 @@
+<h3 #title>You have {{ todos.length }} todos.</h3>
+
+  <input [value]="inputValue" #inputTodo/><button
+    (click)="onClick()"
+  >
+    Add Todo
+  </button>
+
+  <ul>
+    <li *ngFor="let todo of todos">
+      {{ todo }}
+      <button>Delete</button>
+    </li>
+  </ul>
